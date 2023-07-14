@@ -1,0 +1,112 @@
+
+Start with fulll Ubuntu Server 20.04.5 install 
+ 
+
+$ sudo apt update
+$ sudo apt upgrade
+
+$ sudo apt install tasksel
+$ sudo tasksel install ubuntu-desktop
+$ sudo systemctl set-default graphical.target
+$ sudo reboot
+
+
+
+
+$ sudo nano /etc/default/grub
+Add “pcie_aspm=off” into the line of GRUB_CMDLINE_LINUX=”” and save the change.
+Execute the command to update the grub and then reboot:
+$ sudo update-grub
+
+
+$ sudo touch /etc/modprobe.d/blacklist-nouveau.conf
+$ sudo nano /etc/modprobe.d/blacklist-nouveau.conf
+
+add : 
+
+blacklist nouveau
+options nouveau modeset=0
+
+save file
+
+
+$ sudo update-initramfs -u
+
+W: Possible missing firmware /lib/firmware/ast_dp501_fw.bin for module ast
+ignore it !
+
+
+$ sudo reboot
+
+
+
+install some tools for Nvidia graphics and maybe CUUDA later ??
+$ sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa-dev libfreeimage-dev libglfw3-dev
+
+Goto Nvidia homepage to download the install package for your particular card !!!
+In this example the card is RTX6000
+
+Copy the file into home directory, make sure its executable 
+
+
+run the installer 
+$ sudo ./NVIDIA-Linux-aarch64-535.54.03.run
+
+(do not do this in SSH shell, it has to be done local !!!!)
+
+
+$ sudo reboot
+
+
+
+
+You now have Ubuntu desktop with Nvidia drivers installed and booting up the Nvidia display
+============================================================================================
+
+CUUDA
+
+
+================================
+
+
+
+
+BOX86 + SteAM and BOX64
+
+
+sudo dpkg --add-architecture armhf
+
+
+==== Do not compile right now because standard GCC and gcc-arm-linux-gnueabihf need for box86 are not clear to me !!!
+
+
+
+Use @Itai-Nelken's apt repository to install precompiled box86 debs, updated weekly.
+
+sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
+wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/box86-debs-archive-keyring.gpg
+sudo apt update && sudo apt install box86:armhf -y
+
+
+Still use the script file to install steam but we need to clone git BOX86 sources for that 	
+
+$ git clone https://github.com/ptitSeb/box86
+
+$ cd box86
+
+$ ./install_steam.sh
+
+
+ 
+$ sudo wget https://ryanfortner.github.io/box64-debs/box64.list -O /etc/apt/sources.list.d/box64.list
+$ wget -qO- https://ryanfortner.github.io/box64-debs/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/box64-debs-archive-keyring.gpg
+$ sudo apt update && sudo apt install box64-generic-arm -y
+
+
+maybe needed ??
+$ sudo systemctl restart systemd-binfmt
+
+$ sudo reboot
+
+
+

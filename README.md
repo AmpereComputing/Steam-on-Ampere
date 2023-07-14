@@ -4,7 +4,7 @@
 
 ## Summary
 
-This how-to explains running Vive Steam on Ampere platform via Box86/Box64. Much thanks to our ![ADLINK](https://www.ipi.wiki) friends for this!
+This how-to explains running Vive Steam on Ampere platform via Box86/Box64. Much thanks to our [ADLINK](https://www.ipi.wiki) friends for this!
 ## Running Steam on Ampere Altra 
 
 Steam is a video game digital distribution service and storefront from Valve. It was launched as a software client in September 2003 to provide game updates automatically for Valve's games, and expanded to distributing third-party titles in late 2005. 

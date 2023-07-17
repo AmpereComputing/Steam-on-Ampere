@@ -180,7 +180,12 @@ We use [@Itai-Nelken](https://github.com/Itai-Nelken)'s apt repository to instal
 ```sh
 sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
 wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/box86-debs-archive-keyring.gpg
-sudo apt update && sudo apt install box86:armhf -y
+sudo dpkg --add-architecture armhf
+sudo apt update
+sudo apt install box86:armhf -y
+# Run the following command if needed
+# sudo apt --fix-broken install
+
 ```
 
 Note that we are installing `box86:armhf`, do not install `box86`
@@ -192,7 +197,7 @@ Note that we are installing `box86:armhf`, do not install `box86`
 
 We use [@ryanfortner](https://github.com/ryanfortner)'s apt repository to install precompiled box64 debs, updated every 24 hours.
 
-```sh
+```sh 
 $ sudo wget https://ryanfortner.github.io/box64-debs/box64.list -O /etc/apt/sources.list.d/box64.list
 $ wget -qO- https://ryanfortner.github.io/box64-debs/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/box64-debs-archive-keyring.gpg
 $ sudo apt update && sudo apt install box64-generic-arm -y
@@ -209,5 +214,14 @@ Use the following to install steam.
 $ git clone https://github.com/ptitSeb/box86
 $ cd box86
 $ ./install_steam.sh
+```
+
+### Run Steam 
+
+```
+$ cd ~/steam/bin
+$ export STEAMOS=1
+$ export STEAM_RUNTIME=1
+$ ./steam
 ```
 

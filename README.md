@@ -51,7 +51,7 @@ This will provide you with a setup that allows you to tryout games that are enab
 - Proton, other optimization ?
 
 ### Setting up the GPU accelerated Desktop
-Please follow instructions in this [docoment](https://github.com/AmpereComputing/NVIDIA-GPU-Accelerated-Linux-Desktop-on-Ampere/) to setup Nvidia GPU enabled desktop. 
+Please follow instructions in this [document](https://github.com/AmpereComputing/NVIDIA-GPU-Accelerated-Linux-Desktop-on-Ampere/) to setup Nvidia GPU enabled desktop. 
 
 ### Installing Box86 and Box64 emulation
 

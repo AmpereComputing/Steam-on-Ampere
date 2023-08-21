@@ -218,10 +218,8 @@ $ ./install_steam.sh
 
 ### Run Steam 
 
+Start Steam with the following command and login to start Steam. 
 ```
-$ cd ~/steam/bin
-$ export STEAMOS=1
-$ export STEAM_RUNTIME=1
-$ ./steam
+$ /usr/local/bin/steam
 ```
 

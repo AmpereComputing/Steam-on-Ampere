@@ -117,3 +117,14 @@ Start Steam with the following command and login to start Steam.
 $ /usr/local/bin/steam
 ```
 
+### Enable Proton for Playing Windows-only games
+
+To play Windows-only games, either wine emulator or proton emulator is needed. Steam comes with proton as such it is just a few click away to play Windows-only games. 
+
+Open the setting dialog box. 
+![Open Setting](images/steam-setting-menu.png)
+
+Select *Compatibility* button at left panel and check *Enable Steam Play for all other titles*. Optionally, configure Proton version as desired. 
+![Open Setting](images/steam-setting-compatibility.png)
+
+

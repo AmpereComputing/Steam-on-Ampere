@@ -28,10 +28,8 @@ How to get it operational is the first step in this journey and how to get it op
 
 For the system we have been using to try this out we started with a quite moderate configuration : 
 
-- AADP32 with 2x 16GB DDR4       buy it here :   https://www.ipi.wiki/products/ampere-altra-developer-platform
-- Nvidia RTX A6000                            check out the AVL of cards that are know to work on arm64
-
-
+- [AADP32 with 2x 16GB DDR4](https://www.ipi.wiki/products/ampere-altra-developer-platform)
+- NVIDIA RTX 4080 (Ada), RTX A6000 (Ampere), RTX 3060 (Ampere), RTX 6000 (Turing)
 
 The below software installation covers :  
 

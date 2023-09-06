@@ -5,6 +5,8 @@
 ## Summary
 This repo contains documents to install and run Steam on Ampere CPU based workstation. 
 
+## Table of Contents
+
 ## Introduction
 This how-to explains running [Steam](https://store.steampowered.com) on Ampere Altra with x86 emulation via [box64/box86](https://box86.org). Much thanks to our [ADLINK](https://www.ipi.wiki) friends for this! This is part of efforts for [Ampere on Edge](https://amperecomputing.com/home/edge). 
 

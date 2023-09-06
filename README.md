@@ -4,7 +4,7 @@
 
 ## Summary
 
-This how-to explains how developers can run [Steam](https://store.steampowered.com) on Ampere Altra with x86 emulation via [box64/box86](https://box86.org). 
+This how-to explains how developers can run Steam on Ampere Altra with x86 emulation via box64/box86. 
 
 ## Overview
 

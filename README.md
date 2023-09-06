@@ -8,7 +8,7 @@ This how-to explains how developers can run Steam on Ampere Altra with x86 emula
 
 ## Overview
 
-ADLINK and Ampere want to contribute to awareness that developers can have a powerful Arm development environment for a wide variety of applications inside and outside the data center. And to lknow about the ability to have an x86 Linux user space on Ampere Altra via box64/box86 which provides an x86 emulation layer.  To support this ADLINK is donating an [Ampere Altra Developer Platform](https://www.ipi.wiki/pages/ampere-altra-developer-platform) workstation to the box64/box86 project for more experimentation and continued improvement of that popular open source project.
+ADLINK and Ampere want to contribute to awareness that developers can have a powerful Arm development environment for a wide variety of applications inside and outside the data center. And to know about the ability to have an x86 Linux user space on Ampere Altra via box64/box86 which provides an x86 emulation layer.  To support this ADLINK is donating an [Ampere Altra Developer Platform](https://www.ipi.wiki/pages/ampere-altra-developer-platform) workstation to the box64/box86 project for more experimentation and continued improvement of that popular open source project.
 
 We think the "how to" below will be interesting for developers. Ampere Altra Developer Platform is is a great fit for developers, especially ones developing for Arm-based clouds, systems, and devices. This is why Ampere Altra Dev Platform (a.k.a. "AVA Dev Platform") became the developer platform for the [SOAFEE](https://www.soafee.io) open source Software-Defined Vehicle program. Despite the NVIDIA GPU support and RGB lighting, its focus isn't playing games. 
 

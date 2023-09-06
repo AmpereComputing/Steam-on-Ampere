@@ -4,7 +4,12 @@
 
 ## Summary
 
-This how-to explains running Vive Steam on Ampere platform via Box86/Box64. Much thanks to our [ADLINK](https://www.ipi.wiki) friends for this! This is part of efforts for [Ampere on Edge](https://amperecomputing.com/home/edge). 
+This how-to explains running [Steam](https://store.steampowered.com) on Ampere Altra with x86 emulation via [box64/box86](https://box86.org). Much thanks to our [ADLINK](https://www.ipi.wiki) friends for this! This is part of efforts for [Ampere on Edge](https://amperecomputing.com/home/edge). 
+
+ADLINK and Ampere want to contribute to  awareness of the ability to have powerful Arm development environment. And to know about the ability to have an x86 Linux user space on Ampere Altra via box64/box86 which provides an x86 emulation layer.  To support this ADLINK is donating an [Ampere Altra Developer Platform](https://www.ipi.wiki/pages/ampere-altra-developer-platform) workstation to the box64/box86 project for more experimentation and continued improvement of that popular open source project.
+
+We think the how to below will be interesting for developers. Ampere Altra Developer Platform is not a desktop gamer system (despite the RGB lighting). It is a great fit for developers, especially ones developing for Arm-based clouds, systems, and devices. This is why Ampere Altra Dev Platform (a.k.a. "AVA Dev Platform") became the developer platform for the [SOAFEE](https://www.soafee.io) open source Software-Defined Vehicle program.
+
 ## Running Steam on Ampere Altra 
 
 Steam is a video game digital distribution service and storefront from Valve. It was launched as a software client in September 2003 to provide game updates automatically for Valve's games, and expanded to distributing third-party titles in late 2005. 
